@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <title>IMC</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;800&family=Roboto:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="alert-error">
+  Digite somente números!
+</div>
+<div class="container">
+<div class="modal-wrapper ">
+  <div class="modal card">
+    <button class="close" onclick="onclick()">
+      <img src="./SVG/close.svg" alt="Botão de fechamento">
+    </button>
+    <h2 id="title">Seu imc é de 30</h2>
+  </div>
+</div>
+<form class="card">
+  <h2 class="title">Cálculo de IMC</h2>
+  <div class="input-wrapper">
+  <label for="weight">Peso(kg)</label>
+  <input placeholder="70" type="text" name="kilos" id="weight"/>
+  </div>
+  <div class="input-wrapper">
+  <label for="height">Altura(cm)</label>
+  <input placeholder="170" type="text" name="altura" id="height"/>
+  </div>
+  <button type="submit" id="calculateIMC">Calcular IMC </buttom> 
+</form>
+</div>
+<script src="/js/script.js" defer type="module"></script>
+</body>
+</html>
